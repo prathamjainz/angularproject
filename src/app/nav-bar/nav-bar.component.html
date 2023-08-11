@@ -1,0 +1,45 @@
+<header>
+  <nav class="navbar">
+  <div class="container">
+    <div class="row" >
+      <div class="col-md-1 col-sm-1 col-1">
+        <div class="logo" >
+          <img src="/assets/logos.png" alt="logo" title="logo"/>
+        </div> 
+      </div>
+      <div class="col-md-9 col-sm-9 col-9 text-end">
+        <div class="menu_icon"  (click)="menu_open()">
+            <span></span>
+            <span></span>
+            <span></span>
+            
+        </div>
+        <div class="menu" *ngIf="menu_variable == true">
+          <ul>
+            <li><a routerLink="home-page">Home</a></li>
+            <li title="products"><a href="#">Products</a></li>
+            <li title="services"><a href="#">Services</a></li>
+            <li><a routerLink="about-section">About</a></li>
+            <li title="login" ><a routerLink="login">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+
+
+<script>
+  const navElement=document.querySelector('.navbar');
+  window.addEventListener('scroll', ()=>{
+    if(window.scrollY>=56){
+      navElement.classList.add('navbar-scrolled');
+    }else if(window.scrollY<56){
+      navElement.classList.remove('navbar-scrolled');
+    }
+  });
+
+
+</script>
+

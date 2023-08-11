@@ -1,0 +1,129 @@
+* {
+    text-align: center;
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-weight: 130;
+}
+.main-function {
+    align-items: center;
+    align-content: center;
+}
+/* .magic{
+    position: sticky;
+    color:white;
+    opacity: 0.3;
+    top: 3.3rem;
+    text-align: left;
+    z-index: 2;
+    mix-blend-mode: difference;
+} */
+.back-drop {
+    height: 400px;
+    background-color: bisque;
+    opacity: 80%;
+    z-index: 0;
+}
+.first-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 24px 30px 24px;
+}
+#image3 {
+    height: 100%;
+    width: 100%;
+}
+#image {
+    margin-top: 5%;
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    object-fit: scale-down;
+}
+#image2 {
+    margin-top: 2%;
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    object-fit: scale-down;
+}
+.products {
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #009ade;
+    margin: 6px;
+    margin-left: 10px;
+    border-radius: 25px;
+    padding: 20px;
+    min-height: 40vh;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3);
+    height: max-content;
+   
+
+}
+.product {
+    justify-content: center;
+    margin: 35px 5px 0px 0px;
+    border-radius: 15px;
+    padding: 25px;
+    height: max-content;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+#Business {
+    color: #1F4280;
+}
+#individual {
+    color: rgb(50, 179, 136);
+    /* background-color:  #1F4280; */
+}
+.title-line {
+    font-size: 19px;
+    font-weight: bold;
+    color: #0191cf;
+    margin: 15px;
+}
+.grid-section {
+    flex-flow: row wrap;
+    justify-content: center;
+    display: flex;
+}
+.common-css {
+    border: rgb(212, 217, 215) 0.1px solid;
+    border-radius: 35px;
+    border-top: 0;
+    margin: 8px;
+    height: 25vh;
+    min-width: 200px;
+    color: #1F4280;
+    align-items: center;
+    font-size: 20px;
+    padding: 0px 4px 0px 4px;
+    max-height: 200px;
+    min-height: 100px;
+
+}
+.common-css:hover {
+    border:  #1F4280 2px solid;
+    border-top: 0;
+}
+.Business-title {
+    padding: 5px;
+    border: 2px black;
+    background-color: #1F4280;
+    border-radius: 16px;
+}
+.individual-title {
+    padding: 5px;
+    border: 2px black;
+    background-color: rgb(50, 179, 136);
+    border-radius: 16px;
+}
+footer {
+    background-color: #1F4280;
+    margin-top: 10px;
+    left: 0;
+    bottom: 0;
+    min-height: 140px;
+    width: 100%;
+}
+@media only screen and (max-width:500px) {}

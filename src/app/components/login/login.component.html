@@ -1,0 +1,71 @@
+<div class="outer">
+  <div class="container">
+    <div class="row">
+      <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+        <div class="panel border bg-white">
+          <div class="panel-heading">
+            <h3 class="pt-3 font-weight-bold">Log in</h3>
+          </div>
+          <div class="panel-body p-3">
+            <form [formGroup]="loginForm">
+              <div class="form-group pt-3">
+                <div class="input-bar">
+                  National ID/IqamaNo. :
+                  <div class="input-field" [class.error]= "loginForm.controls['username'].dirty && loginForm.hasError('required', 'username')">
+                    <input
+                      formControlName="username"
+                      type="text"
+                      placeholder="username"
+                    />
+                  </div>
+                </div>
+              </div>
+              <p><small  *ngIf= "loginForm.controls['username'].dirty && loginForm.hasError('required', 'username')" class="text-danger">*required username</small></p>
+
+              <div class="form-group pt-3">
+                <div class="input-bar">
+                  Password :
+                  <div class="input-field" [class.error]= "loginForm.controls['password'].dirty && loginForm.hasError('required', 'password')">
+                    <input
+                      formControlName="password"
+                      [type]="type"
+                      placeholder="password"
+                    />
+                    <span
+                      (click)="hideShowPass()"
+                      class="fa {{ eyeIcon }}"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <p><small  *ngIf= "loginForm.controls['password'].dirty && loginForm.hasError('required', 'password')" class="text-danger">*required password</small></p>
+
+              <div class="form-inline fr mt-3">
+                <a id="forget" class="font-weight-bold">Forget password?</a>
+              </div>
+              <button (click)="onSubmit()"  type = "submit" class = "btn btn-primary btn-block ">LOGIN</button>
+            </form>
+              <div class="text-center pt-4 text-muted">
+                Don't have account?
+                <a id="forget" routerLink="/signup">Sign Up</a>
+              </div>
+            
+          </div>
+          <div class="mx-1 my-1 py-2 bordert">
+            <div class="text-center py-3">
+              <a href="https://www.google.com/" target="_blank" class="px-2">
+                <img src="/assets/google.png"
+              /></a>
+              <a href="https://www.facebook.com/" target="_blank" class="px-2">
+                <img src="/assets/facebook.png"
+              /></a>
+              <a href="https://www.linkedin.com/" target="_blank" class="px-2">
+                <img src="/assets/linkedin.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

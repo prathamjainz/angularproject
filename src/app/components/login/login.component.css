@@ -1,0 +1,152 @@
+.outer {
+
+    background: #dff3fa6a no-repeat;
+
+}
+
+img {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    transition: ease-in-out 0.3s;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+
+.pt-3 {
+    padding: 16px 0px 1px 10px;
+    font-size: 23px;
+}
+
+h3 {
+    border-bottom: rgba(86, 83, 83, 0.285) 1px solid;
+}
+
+.row {
+    padding: 5px;
+    margin-top: 58px;
+    margin-bottom: 148px;
+}
+
+.border {
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.panel-heading {
+    color: #1F4280;
+}
+
+.input-bar {
+    margin-top: 8px;
+    color: rgba(97, 96, 96, 0.788);
+    min-height: auto;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+.input-field {
+    border-radius: 8px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: rgba(128, 128, 128, 0.553) 0.5px solid;
+    color: rgba(97, 96, 96, 0.388);
+}
+
+.input-field:hover {
+    border: rgba(36, 111, 148, 0.853) 1.1px solid;
+}
+
+.input-field.error {
+    border: red 2px solid;
+    color: red;
+}
+
+input[type='text'],
+input[type='password'] {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+}
+
+.fa-eye-slash.btn {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: #1F4280;
+    background-color: #1F4280;
+}
+
+/* .btn {
+    margin-top: 20px;
+    border-radius: 15px;
+} */
+
+/* input:hover{
+    border: rgba(6, 29, 54, 0.853) 0.7px solid;
+} */
+
+#forget {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#forget:hover {
+    text-decoration: underline rgba(177, 208, 249, 0.726);
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+    padding: 5px;
+    margin-left: 5px;
+    font-size: small;
+}
+
+.btn {
+    margin: 20px 5px 5px 5px;
+    border: 1px whitesmoke;
+    border-radius: 20px;
+    width: 100%;
+    min-height: 30px;
+    background-color: #0191cf;
+    color: white;
+    text-align: center;
+    /* text-decoration: none; */
+    display: inline-block;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.bordert {
+    border-top: 1px solid #aaaaaaa3;
+    position: relative;
+}
+
+.bordert:after {
+    content: " other options : ";
+    position: absolute;
+    top: -13px;
+    left: 37%;
+    background-color: white;
+    color: rgba(97, 96, 96, 0.537);
+    padding: 0;
+   
+}
+p{
+    text-align: right;
+    margin: 0;
+    padding: 0 10px 0 0;
+    font-size: 12px;
+}
+small{
+    margin: 0;
+    padding:0;
+}

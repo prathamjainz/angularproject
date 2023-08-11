@@ -1,0 +1,275 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+/* @import url('assets/css/common.css'); */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* You can add global styles to this file, and also import other style files */
+/* .container{
+    display:grid;
+    height: 100vh;
+    align-content: center;
+    font-family: Poppins,sans-serif;
+    text-align: center;
+    color:white;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 2fr 6fr 4fr;
+    grid-template-areas:
+    "nav"
+    "main"
+    "sidebar"
+    "grid-class-2"
+    "footer";
+}
+nav{
+    background-color: #0a224ac9;
+   
+    grid-area: nav;
+}
+main{
+    filter: brightness(1);
+    background-color: rgba(0, 0, 0, 0.37);
+    color:white;
+    grid-area: main;
+    
+}
+#sidebar{
+    border: 1px solid;
+    background-color: aquamarine;
+    grid-area: sidebar;
+    border-radius: 10px;
+}
+
+
+.grid-class-2{
+    grid-area: grid-class-2;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    ". content1 content2 content3 content4 . "
+    " .  . content5 content6  . ."; 
+}
+.common-css{
+    border: rgb(212, 217, 215) 0.1px solid;
+    border-radius: 15px;
+    border-top: 0;
+    margin: 3px;
+    height: 20vh;
+}
+
+.Business-title{
+    border: 2px black ;
+    background-color: #0a224ac9;
+    border-radius: 14px;
+}
+.individual-title{
+    border: 2px black ;
+    background-color: aquamarine;
+    border-radius: 14px;
+}
+
+#content1{
+    grid-area: content1;
+}
+#content2{
+    grid-area: content2;
+}
+#content3{
+    grid-area: content3;
+}
+#content4{
+    grid-area: content4;
+}
+#content5{
+    grid-area: content5;
+}
+#content6{
+    grid-area: content6;
+}
+footer{
+    color: white;
+    background-color: #041024c9;
+    grid-area: footer;
+
+}
+
+@media only screen  and (max-width:500px){
+    *{
+        margin:0;
+        padding:0;
+        overflow-y: auto;
+    }
+    .container{
+        font-size: 100%;
+        overflow-y: auto;
+        overflow: scroll;
+        overflow-x: hidden;
+        grid-template-columns: 1fr ;      
+        grid-template-rows: 2fr 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+        grid-template-areas: 
+        "nav" 
+        "main"
+        "sidebar"       
+        "content1"
+        "content2"
+        "content3"
+        "content4"
+        "content5"
+        "content6"
+        "footer"  ;
+    }
+    #sidebar{
+        margin:10px 20% 5% 20%;
+    }
+    .common-css{
+        margin-right: 10%;
+        margin-left: 10%;overflow-y: auto; 
+
+        height:90%;
+    }
+    .grid-class-2{
+        margin-left:90px;
+        margin-right:90px;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* You can add global styles to this file, and also import other style files */
+/* .container{
+    display:grid;
+    height: 100vh;
+    align-content: center;
+    font-family: Poppins,sans-serif;
+    text-align: center;
+    color:white;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1.5fr 4fr 4fr 4fr;
+    grid-template-areas:
+    "nav nav nav nav nav nav"
+    "main main main main main main"
+    " . .  sidebar sidebar . ."
+    ". content1 content2 content3 content4 . "
+    " .  . content5 content6  . ."
+    "footer footer footer footer footer footer"  ;
+}
+nav{
+    background-color: #0a224ac9;
+   
+    grid-area: nav;
+}
+main{
+    filter: brightness(1);
+    background-color: rgba(0, 0, 0, 0.37);
+    color:white;
+    grid-area: main;
+    
+}
+#sidebar{
+    border: 1px solid;
+    background-color: aquamarine;
+    grid-area: sidebar;
+}
+
+.Business-title{
+    border: 2px black ;
+    background-color: #0a224ac9;
+    border-radius: 14px;
+}
+.individual-title{
+    border: 2px black ;
+    background-color: aquamarine;
+    border-radius: 14px;
+}
+
+#content1{
+    border: rgb(212, 217, 215) 0.1px solid;
+    grid-area: content1;
+    border-radius: 15px;
+    border-top: 0;
+    margin: 3px;
+}
+#content2{
+    border: rgb(212, 217, 215) 0.1px solid;
+    grid-area: content2;
+    border-radius: 15px;
+    border-top: 0;
+    margin: 3px;
+}
+#content3{
+    border: rgb(212, 217, 215) 0.1px solid;
+    grid-area: content3;
+    border-radius: 15px;
+    border-top: 0;
+    margin: 3px;
+}
+#content4{
+    border: rgb(212, 217, 215) 0.1px solid;
+    grid-area: content4;
+    border-radius: 15px;
+    border-top: 0;
+    margin: 3px;
+}
+#content5{
+    border: rgb(212, 217, 215) 0.1px solid;
+    grid-area: content5;
+    border-radius: 15px;
+    border-top: 0;
+    margin: 3px;
+}
+#content6{
+    border: rgb(212, 217, 215) 0.1px solid;
+    grid-area: content6;
+    border-radius: 15px;
+    border-top: 0;
+    margin: 3px;
+}
+footer{
+    color: white;
+    background-color: #041024c9;
+    grid-area: footer;
+
+}
+
+@media only screen  and (max-width:500px){
+    .container{
+        grid-template-columns: 1fr ;
+      
+        grid-template-rows: 2fr 10fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 3fr;
+        grid-template-areas: 
+        "nav" 
+        "main"
+        "sidebar"
+        "content1"
+        "content2"
+        "content3"
+        "content4"
+        "content5"
+        "content6"
+        "footer"  ;
+    }
+    #sidebar{
+       margin-left: 60px;
+       margin-right: 60px;
+    }
+} */

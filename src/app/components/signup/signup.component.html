@@ -1,0 +1,175 @@
+<p>signup works!</p>
+<div class="outer">
+  <div class="container">
+    <div class="row">
+      <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+        <div class="panel border bg-white">
+          <div class="panel-heading">
+            <h3 class="pt-3 font-weight-bold">Sign Up</h3>
+          </div>
+          <div class="panel-body p-3">
+            <form [formGroup]="loginForm">
+              <div class="form-group">
+                <div class="input-bar">
+                  First Name:
+                  <div
+                    class="input-field"
+                    [class.error]="
+                      loginForm.controls['name'].dirty &&
+                      loginForm.hasError('required', 'name')
+                    "
+                  >
+                    <input
+                      formControlName="name"
+                      type="text"
+                      placeholder="name"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-bar">
+                  Last Name:
+                  <div
+                    class="input-field"
+                    [class.error]="
+                      loginForm.controls['surname'].dirty &&
+                      loginForm.hasError('required', 'surname')
+                    "
+                  >
+                    <input
+                      formControlName="surname"
+                      type="text"
+                      placeholder="surname"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-bar">
+                  National ID/IqamaNo. :
+                  <div
+                    class="input-field"
+                    [class.error]="
+                      loginForm.controls['username'].dirty &&
+                      loginForm.hasError('required', 'username')
+                    "
+                  >
+                    <input
+                      formControlName="username"
+                      type="text"
+                      placeholder="username"
+                    />
+                  </div>
+                </div>
+              </div>
+              <p>
+                <small
+                  *ngIf="
+                    loginForm.controls['username'].dirty &&
+                    loginForm.hasError('required', 'username')
+                  "
+                  class="text-danger"
+                  >*required username</small
+                >
+              </p>
+
+              <div class="form-group">
+                <div class="input-bar">
+                  Mobile Number:
+                  <div class="input-field"  [class.error]="
+                  loginForm.controls['phonenumber'].dirty &&
+                  loginForm.hasError('required', 'phonenumber')
+                ">
+                    <input
+                      formControlName="phonenumber"
+                      type="text"
+                      placeholder="phone number"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-bar">
+                  Email:
+                  <div class="input-field"  [class.error]="
+                  loginForm.controls['email'].dirty &&
+                  loginForm.hasError('required', 'email')
+                ">
+                    <input
+                      formControlName="email"
+                      type="text"
+                      placeholder="email"
+                    />
+                  </div>
+                </div>
+              </div>
+              <p>
+                <small
+                  *ngIf="
+                    loginForm.controls['email'].dirty &&
+                    loginForm.hasError('required', 'email')
+                  "
+                  class="text-danger"
+                  >*required email</small
+                >
+              </p>
+
+              <div class="form-group">
+                <div class="input-bar">
+                  Create password :
+                  <div
+                    class="input-field"
+                    [class.error]="
+                      loginForm.controls['password'].dirty &&
+                      loginForm.hasError('required', 'password')
+                    "
+                  >
+                    <input
+                      formControlName="password"
+                      [type]="type"
+                      placeholder="password"
+                    />
+                    <span
+                      (click)="hideShowPass()"
+                      class="fa {{ eyeIcon }}"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                <small
+                  *ngIf="
+                    loginForm.controls['password'].dirty &&
+                    loginForm.hasError('required', 'password')
+                  "
+                  class="text-danger"
+                  >*required password</small
+                >
+              </p>
+
+              <!-- <div class="form-inline fr mt-3">
+                  <a id="forget" class="font-weight-bold">Forget password?</a>
+                </div> -->
+              <button type="submit"  (click)= "onSubmit()" class="submit-button">SIGNUP</button>
+              <div class="text-center pt-4 text-muted">
+                Already a member?
+                <a id="forget" routerLink="/login">Login</a>
+              </div>
+            </form>
+          </div>
+          <!-- <div class="mx-1 my-1 py-2 bordert">
+              <div class="text-center py-3">
+                <a href="https://www.google.com/" target="_blank" class="px-2"> <img src="/assets/google.png"></a>
+                <a href="https://www.facebook.com/" target="_blank" class="px-2"> <img src="/assets/facebook.png"></a>
+                <a href="https://www.linkedin.com/" target="_blank" class="px-2"> <img src="/assets/linkedin.png"></a>
+              </div>
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
